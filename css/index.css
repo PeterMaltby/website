@@ -8,3 +8,62 @@
                                
 */
 
+/* colour scheme :
+#fefae0
+#bc6c25
+#dda15e
+#606c38
+#283618
+*/
+
+body {
+	background-color:#fefae0;
+	color:#283618;
+	margin: 0;
+	padding: 0;
+	font-family: monospace;
+}
+
+.hidden {
+	display: none;
+}	
+
+/* HEADER ------------------*/
+header {
+	background-color:#fefae0;
+	margin: 0;
+	font-size: 1.125rem;
+}
+
+header p {
+	margin:0;
+	padding: 1rem;
+}
+
+#title {
+	color:#bc6c25;
+	font-size:2rem;
+}
+
+header .subtitle {
+	color:#283618;
+}
+
+nav {
+	background-color:#bc6c25;
+	padding: 0.25rem;
+}
+
+nav a {
+	padding: 0.25rem 0.5rem;
+	color: #fefae0;
+	text-decoration:none;
+}
+
+nav a:hover {
+	background-color: #dda15e;
+}
+
+.right {
+	float: right;
+}
