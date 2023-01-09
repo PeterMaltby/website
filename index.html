@@ -23,42 +23,46 @@ created: 2023-01-06
 
 <body>
 	<header>
-		<p>
-			<b id="title">Peter Maltby</b>
-			<span class="hidden">-</span>
-			<span class="subtitle">personal site</span>
-		</p>
+		<div id="title">
+			<pre class="container" aria-label="Peter's personal site" aria-hidden="true">
+ ___       _               __  __  
+| _ \ ___ | |_  ___  _ _  |  \/  | 
+|  _// -_)|  _|/ -_)| '_| | |\/| | 
+|_|  \___| \__|\___||_|   |_|  |_|'s <span id="title-subtitle">personal site</span></pre>
 		<hr class="hidden" />
+		</div>
 		<nav>
-			<a href="lego.co.uk">about me</a>
-			<a href="test.html">photography</a>
-			<span class="right">
-				<a href="https://github.com/PeterMaltby">Github</a>
-				<a href="mailto:makeaddr@mail.com">peter@peter.com</a>
-			</span>
+			<div class="container">
+				<a href="lego.co.uk">about me</a>
+				<a href="test.html">photography</a>
+				<span class="right">
+					<a href="https://github.com/PeterMaltby">Github</a>
+				</span>
+			</div>
 		</nav>
 	</header>
 	<hr class="hidden" />
 	
-	<div id="content">
-		<section>
-			<h1>About me</h1>
+	<div class="container" id="content">
+		<section class="flex">
+			<div class="text-col">
+				<h1>About me</h1>
 
-			<p>Software engineer currently based in Lincoln, United Kingdom.</p>
-			<p>Creates and experiment with software, unix-based servers and sometimes hardware.</p>
-			<p>Likes to go outside and take pictures.</p>
-			
-			<img src="rec/snow_mr.jpg" alt="Peter hiking in snow" title="winter hiking in Scotland." width ="512"/>
-			<hr />
+				<p>Software engineer currently based in Lincoln, United Kingdom.</p>
+				<p>I create and experiment with software, unix-based servers and sometimes hardware.</p>
+				<p>like to go outside and take pictures.</p>
+			</div>
+				<img class="img-col" src="rec/snow_mr.jpg" alt="Peter hiking in snow" title="winter hiking in Scotland." width ="512"/>
+				<hr class="hidden" />
 		</section>
 		<section>
 			<h1>Affiliations</h1>
 			<h2>
 				J Sainsburys PLC
 				<span class="hidden">-</span>
-				<span><i>Software engineer</i></span>
+				<span class="inline-subtitle">Software engineer</span>
 			</h2>
-			<p class="date">2021-09 to present</p>
+				<p class="subtitle">2021-09 to present</p>
 			<ul>
 				<li>Microsoft Azure cloud platform team</li>
 				<li>Technical Triage - across organisation problem triage and quick fix implementation.
@@ -68,12 +72,19 @@ created: 2023-01-06
 			<h2>
 				University of Lincoln
 				<span class="hidden">-</span>
-				<span><i>BSc Computer Science (Hons)</i></span>
-</h2>
-			<p class="date">2017-09 to 2021-06</p>
-			<hr />
+				<span class="inline-subtitle">BSc Computer Science (Hons)</span>
+			</h2>
+				<p class="subtitle">2017-09 to 2021-06</p>
+			<hr class="hidden" />
 		</section>
 	</div>
+	<footer>
+		<hr class="hidden" />
+		<br />
+		<p>source code: <a href="https://github.com/PeterMaltby/website">github.com/PeterMaltby/website</a></p>
+		<p>Contact: <a href="mailto:makeaddr@mail.com">peter@peter.com</a><p>
+
+	</footer>
 </body>
 
 </html>
