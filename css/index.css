@@ -17,8 +17,10 @@
 */
 
 body {
-	font-family: sans-serif;
+	font-family: sans-serif, Helvetica Neue, Helvetica, Arial;
 	font-size: 1rem;
+	line-height: 1.55;
+	font-weight: 400;
 	min-height:100vh;
 	color:#283618;
 	display:flex;
@@ -33,11 +35,6 @@ body {
 	float: right;
 }
 
-.subtitle {
-	font-size: 0.75em;
-	font-weight:400;
-}
-
 #content {
 	padding-bottom:25vh;
 }
@@ -48,42 +45,58 @@ body {
 	margin:0 auto;
 }
 
-h1, h2, h3 {
-	font-family:monospace;
-	margin-bottom: 1rem;
-	margin-top:0;
+@media only screen and (max-width:860px) {
+	.container {
+		width: 100%;
+	}
 }
 
-h1+.subtitle, h2+.subtitle, h3+.subtitle {
-	font-size: 1rem;
-	margin-top: -1rem;
+.subtitle {
+	line-height: 1;
+	font-size: 0.875em;
+	font-weight: 300;
+	display : block;
+	padding-bottom: .55em;
+	color: #606c38;
+}
+
+a {
+	font-weight: 600;
+	color: #bc6c25;
+	text-decoration: none;
+}
+
+h1, h2, h3 {
+	line-height: 1.05;
+	padding-top: 1em;
+	font-weight: 300;
+	font-family: Courier New, FreeMono, monospace;
 }
 
 h1 {
-	color:#bc6c25;
-	font-size: 2rem;
-	padding-top: 1em;
+	color: #bc6c25;
+	font-size: 2.5em;
+	border-bottom: 2px solid #dda15e;
 }
 
 h2 {
-	font-size:1.5rem;
-	color:#dda15e;
+	font-size:2em;
 }
 
 h3 {
 	font-size:1.125rem;
 }
 
+ul {
+	padding-left:0;
+	list-style: none;
+}
+
 
 section {
 	margin-left:1rem;
-}
-
-footer { 
-	font-family: monospace;
-	text-align: center;
-	line-height:0.5;
-	margin-top: auto;
+	padding-bottom:1rem;
+	border-bottom: 2px solid #dda15e;
 }
 
 img {
@@ -91,7 +104,6 @@ img {
 	width: 40rem;
 }
 
-/* HEADER ------------------*/
 /*
 #fefae0
 #bc6c25
@@ -102,24 +114,30 @@ img {
 header {
 	margin: 0 auto;
 	width: 100%;
-	font-family:monospace;
+	font-family: Courier New, FreeMono, monospace;
 }
 
 #title {
+	background-color: #fefae0;
 	color:#bc6c25;
 	padding: 0.25rem;
 	margin: 0;
 	font-weight: bold;
+	line-height: 1.05;
 }
 
 nav {
 	background-color:#bc6c25;
-	padding: 0.25rem 0;
-	border-bottom:0.25rem solid #606c38;
+	padding: 0 0;
+	height: 2em;
+	line-height: 2.0;
 }
 
 nav a {
-	padding: 0.25rem 0.5rem;
+	font-weight: 400;
+	display: inline-block;
+	height: 2em;
+	padding: 0 0.5em;
 	color: #fefae0;
 	text-decoration:none;
 }
@@ -127,9 +145,12 @@ nav a {
 nav a:hover {
 	background-color: #dda15e;
 }
-/* HEADER ------------------*/
 
+footer { 
+	font-family: Courier New, FreeMono, monospace;
+	text-align: center;
+	line-height:0.5;
+	margin-top: auto;
+	font-size: 0.875em;
+}
 
-/* FLEXBOX -----------------*/
-
-/* FLEXBOX -----------------*/
