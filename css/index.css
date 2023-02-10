@@ -66,6 +66,10 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	text-decoration:underline;
+}
+
 h1, h2, h3 {
 	line-height: 1.05;
 	padding-top: 1em;
@@ -144,7 +148,13 @@ nav a {
 
 nav a:hover {
 	background-color: #dda15e;
+	text-decoration:none;
 }
+
+nav a.active {
+	text-decoration:underline;
+}
+
 
 footer { 
 	font-family: Courier New, FreeMono, monospace;
