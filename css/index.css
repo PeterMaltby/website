@@ -8,6 +8,7 @@
                                
 */
 
+
 /* colour scheme :
 #fefae0
 #bc6c25
@@ -36,7 +37,7 @@ body {
 }
 
 #content {
-	padding-bottom:25vh;
+	padding-bottom:1rem;
 }
 
 .container {
@@ -45,10 +46,18 @@ body {
 	margin:0 auto;
 }
 
+.inline {
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+
+
 @media only screen and (max-width:860px) {
 	.container {
 		width: 100%;
 	}
+
 }
 
 .subtitle {
@@ -59,6 +68,7 @@ body {
 	padding-bottom: .55em;
 	color: #606c38;
 }
+
 
 a {
 	font-weight: 600;
@@ -71,8 +81,10 @@ a:hover {
 }
 
 h1, h2, h3 {
+	margin: 0;
 	line-height: 1.05;
-	padding-top: 1em;
+	padding-top: 2em;
+	padding-bottom: 1em;
 	font-weight: 300;
 	font-family: Courier New, FreeMono, monospace;
 }
@@ -81,6 +93,7 @@ h1 {
 	color: #bc6c25;
 	font-size: 2.5em;
 	border-bottom: 2px solid #dda15e;
+	padding-bottom: 0;
 }
 
 h2 {
@@ -98,11 +111,18 @@ ul {
 
 
 section {
-	margin-left:1rem;
-	padding-bottom:1rem;
+	margin:0.25rem;
+	padding-bottom:5rem;
 	border-bottom: 2px solid #dda15e;
+	position: relative;
 }
 
+.end { 
+	position: absolute;
+	bottom:0px;
+	right:0px;
+}
+	
 img {
 	max-width: 100%;
 	width: 40rem;
@@ -128,6 +148,7 @@ header {
 	margin: 0;
 	font-weight: bold;
 	line-height: 1.05;
+
 }
 
 nav {
